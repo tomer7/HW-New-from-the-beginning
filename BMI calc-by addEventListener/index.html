@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        color: black;
+    }
+
+    body {
+        background: url(images/bg.jpg) no-repeat;
+        background-size: cover;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    #buttonDiv {
+        margin-top: 20px;
+    }
+    button {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+    }
+    input {
+        border-radius: 5px;
+    }
+    p {
+        color: red;
+
+    }
+    #errorInWeight {
+        display: none;
+    }
+
+    #errorInHeight {
+        display: none;
+    }
+    #yourResult {
+        color: blue;
+    }
+
+</style>
+<body>
+    <div id="welcomeDiv">
+<h1><u>! BMI - ברוך הבא למחשבון ה</u></h1>
+</div>
+
+<h4>: הכנס את המשקל שלך</h4>
+<input type="text" id="valueOfWeight">
+<p id="errorInWeight"><B> המשקל אינו תקין </B></p>
+
+<h4>: הכנס את הגובה שלך</h4>
+<input type="text" id="valueOfHeight">
+<p id="errorInHeight"><B> הגובה אינו תקין </B></p>
+
+<div id="buttonDiv">
+<button>
+    תחשב לי
+</button>
+<p id="yourResult"></p>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
