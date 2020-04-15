@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+        background: url(images/bg.jpg) repeat-x;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 20%;
+
+        }
+        select {
+            width: 6%;
+            padding-left: 1%;
+            background-color: aqua;
+        }
+        input {
+            width: 20%;
+        }
+</style>
+<body>
+    <input type="text" id="fNum"> : מספר ראשון
+    <p id="fError"></p>
+<select name="op" id="operator"> 
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select> : פעולה
+<br><br>
+
+<input type="text" id="sNum"> : מספר שני
+<p id="sError"></p>
+<button id="btn">
+    Click me 
+</button>
+
+<div id="res"></div>
+    <script src="script.js"></script>
+</body>
+</html>
