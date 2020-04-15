@@ -1,8 +1,8 @@
 function calc(event)
 {
     let operator = document.querySelector('#operator').value
-    let fNum = parseFloat(document.querySelector('#fNum').value)
-    let sNum = parseFloat(document.querySelector('#sNum').value)
+    let fNum = Number(document.querySelector('#fNum').value)
+    let sNum = Number(document.querySelector('#sNum').value)
     let res = document.querySelector('#res')
 
     if ( isNaN(fNum) || isNaN(sNum) )
@@ -44,7 +44,7 @@ checkInput(input, errorParameter)
 
 function checkInput(input, errorParameter)
 {
-    let value = parseFloat ( input.value )
+    let value = Number ( input.value )
 
     if (isNaN(value))
     {
@@ -60,19 +60,19 @@ function checkInput(input, errorParameter)
     }
 }
 
-let btn = document.querySelector('#btn')
+
 btn.addEventListener (
     'click',
     calc
 )
 
-let fNum = document.querySelector('#fNum')
+
 fNum.addEventListener (
     'keyup',
     beforeCheckInputFNum
 )
 
-let sNum = document.querySelector('#sNum')
+
 sNum.addEventListener (
     'keyup',
     beforeCheckInputSNum
