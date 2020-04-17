@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון משכנתא</title>
+</head>
+<style>
+            body {
+        background: url(images/bg2.jpg);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 4%;
+
+            }
+</style>
+<body>
+    <h3>:הזן את סכום הקרן</h3>
+    <input type="text" id="shumHakeren">
+    <p id="shumHakerenError"></p>
+    <h3>:הזן את התקופה בשנים</h3>
+    <input type="text" id="tkufa">
+    <p id="tkufaError"></p>
+    <h3>: הזן את הריבית השנתית (3.5% זה ברירת המחדל)</h3>
+    <input type="text" id="ribit" value=3.5>
+    <p id="ribitError"></p>
+
+    <h3>:הזן את  הסכום שברצונך לשלם בכל חודש ואנו נאמר לך אם זה יתאים לך</h3>
+    <input type="text" id="kolHodesh">
+    <p id="kolHodeshError"></p>
+
+
+    <button id="buttonOfCalc">
+        חשב
+    </button>
+    <p id="resOfMashcanta"></p>
+    <p id="kolHodeshRes"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
