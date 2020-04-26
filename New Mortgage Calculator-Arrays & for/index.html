@@ -12,30 +12,44 @@
         text-align: center;
         align-items: center;
         padding: 4%;
-
             }
+
+            .theError {
+                color:red;
+            font-size:20px;
+            display: none;
+            }
+
+            .isNoGood {
+                border: 2px solid red;
+            }
+
+            .isNoGood + .theError {
+                display: block;
+            }
+
+
 </style>
 <body>
     <h3>:הזן את סכום הקרן</h3>
-    <input type="text" id="shumHakeren">
-    <p id="shumHakerenError"></p>
+    <input type="text" id="shumHakeren" class="theTextOfUser">
+    <p class="theError">יש להזין ערך מספרי שלם בלבד</p>
     <h3>:הזן את התקופה בשנים</h3>
-    <input type="text" id="tkufa">
-    <p id="tkufaError"></p>
+    <input type="text" id="tkufa" class="theTextOfUser">
+    <p class="theError">יש להזין ערך מספרי שלם בלבד</p>
     <h3>: הזן את הריבית השנתית (3.5% זה ברירת המחדל)</h3>
-    <input type="text" id="ribit" value=3.5>
-    <p id="ribitError"></p>
+    <input type="text" id="ribit" value=3.5 class="theTextOfUser">
+    <p class="theError">יש להזין ערך מספרי שלם בלבד</p>
 
     <h3>:הזן את  הסכום שברצונך לשלם בכל חודש ואנו נאמר לך אם זה יתאים לך</h3>
-    <input type="text" id="kolHodesh">
-    <p id="kolHodeshError"></p>
+    <input type="text" id="kolHodesh" class="theTextOfUser">
+    <p class="theError">יש להזין ערך מספרי שלם בלבד</p>
 
-
-    <button id="buttonOfCalc">
-        חשב
-    </button>
+    <div class="typeSubmit"><br>
+    <input type="submit" id="buttonOfCalc" value="חשב">
     <p id="resOfMashcanta"></p>
     <p id="kolHodeshRes"></p>
+</div>
 
     <script src="script.js"></script>
 </body>

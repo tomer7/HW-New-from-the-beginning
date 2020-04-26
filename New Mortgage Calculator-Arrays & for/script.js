@@ -1,40 +1,25 @@
-let urInputs = [
-    shumHakeren ,
-    tkufa ,
-    ribit ,
-    kolHodesh 
-]
-let errorArray = [
-    document.querySelector('#shumHakerenError') ,
-    document.querySelector('#tkufaError') ,
-    document.querySelector('#ribitError') ,
-    document.querySelector('#kolHodeshError')
-]
 
-for ( let i=0 ; i < urInputs.length ; i++)
+let inputs = document.querySelectorAll('.theTextOfUser')
+for ( let i=0 ; i < inputs.length ; i++)
 {
-        urInputs[i].addEventListener (
-            'keyup',
+        inputs[i].addEventListener (
+            'change',
             check
-        )
-
+        ) 
+}
         function check(event)
         {
-        let input = event.target
-        let error = errorArray[i]
+        let input = event.target.classList
         let value = parseInt(input.value)
         if (isNaN(value))
             {
-            input.style.border = '2px dashed red'
-            error.innerHTML = ' יש להזין ערך מספרי שלם בלבד'
+                input.add('isNoGood')
             }
         else
             {
-            input.style.border = ''
-            error.innerHTML = ''
+                input.remove('isNoGood')
             }
         }
-}
 
 buttonOfCalc.addEventListener (
     'click',
