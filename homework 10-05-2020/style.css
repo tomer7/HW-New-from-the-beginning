@@ -1,0 +1,8 @@
+#result {
+display: block;
+}
+body {
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+        }
